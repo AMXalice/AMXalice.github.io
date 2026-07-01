@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>刘庆祥｜工程项目展示</title>
+  <meta name="description" content="刘庆祥的工程项目展示，涵盖机器视觉、ROS机器人、嵌入式控制与工业自动化。">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://amxalice.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="刘庆祥｜工程项目展示">
+  <meta property="og:description" content="机器视觉、ROS机器人、嵌入式控制与工业自动化项目。">
+  <meta property="og:url" content="https://amxalice.github.io/">
+  <meta property="og:image" content="https://amxalice.github.io/multimedia/mobile_robot.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="返回页面顶部">刘庆祥</a>
+      <nav class="nav-links" aria-label="项目导航">
+        <a href="#visual-detection">视觉检测</a>
+        <a href="#mobile-robot">移动机器人</a>
+        <a href="#quadcopter">四旋翼无人机</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main" id="top">
+    <h1 class="sr-only">刘庆祥的工程项目展示</h1>
+
+    <section class="case-study case-study--landscape" id="visual-detection" aria-labelledby="visual-detection-title">
+      <header class="case-header">
+        <div>
+          <p class="case-kicker">Project 01 · 企业项目 · 2024.10—2025.12</p>
+          <h2 id="visual-detection-title">黄酒瓶视觉缺陷检测与剔除系统</h2>
+        </div>
+        <p class="case-source">上海石库门酿酒有限公司</p>
+      </header>
+
+      <div class="case-layout case-layout--landscape">
+        <div class="media-panel media-panel--landscape">
+          <video controls muted loop preload="metadata" playsinline data-autoplay-video aria-label="黄酒瓶视觉缺陷检测与剔除系统演示视频">
+            <source src="multimedia/visual_detection.mp4" type="video/mp4">
+            当前浏览器不支持视频播放。
+          </video>
+        </div>
+
+        <div class="case-copy">
+          <article class="copy-block">
+            <h3>项目简介</h3>
+            <p>针对黄酒产线人工检测效率和稳定性不足的问题，开发视觉缺陷检测与剔除系统。</p>
+          </article>
+          <article class="copy-block">
+            <h3>工作内容</h3>
+            <p>独立完成图像采集与缺陷标注；针对 4 类缺陷分别使用 VisionTrain 训练目标检测模型，在 VisionMaster 中搭建针对 7 类缺陷的检测流程；完成 PLC 剔除控制与 HMI 监控。</p>
+          </article>
+          <article class="copy-block">
+            <h3>项目结果</h3>
+            <p>系统在额定速度约 300 瓶/分钟的产线上与人工检测并行试运行 5 天，覆盖约 30 万瓶；仅有少量误剔，人工后检未发现明显漏检。相关发明专利申请 1 项，已进入实质审查阶段，本人为发明人。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study case-study--portrait" id="mobile-robot" aria-labelledby="mobile-robot-title">
+      <header class="case-header">
+        <div>
+          <p class="case-kicker">Project 02 · 竞赛项目 · 2025.03—2025.07</p>
+          <h2 id="mobile-robot-title">轮式移动操作机器人自主导航与目标跟踪</h2>
+        </div>
+        <p class="case-source">第二十届中国研究生电子设计竞赛<br>上海赛区三等奖</p>
+      </header>
+
+      <div class="case-layout case-layout--portrait">
+        <div class="portrait-media-wrap">
+          <div class="media-panel media-panel--portrait">
+            <video controls muted loop preload="none" playsinline data-autoplay-video aria-label="轮式移动操作机器人实机演示视频">
+              <source src="multimedia/mobile_robot.mp4" type="video/mp4">
+              当前浏览器不支持视频播放。
+            </video>
+          </div>
+        </div>
+
+        <div class="visual-copy">
+          <figure class="project-image">
+            <img src="multimedia/mobile_robot.jpg" alt="轮式移动操作机器人实物" loading="lazy" decoding="async">
+          </figure>
+          <div class="case-copy">
+            <article class="copy-block">
+              <h3>项目简介</h3>
+              <p>开发由轮式底盘和机械臂组成的移动操作机器人，实现自主导航、6 类医疗物品识别与跟踪，并移动至机械臂可抓取位置。</p>
+            </article>
+            <article class="copy-block">
+              <h3>工作内容</h3>
+              <p>负责 ROS2 自主导航、YOLOv12 模型训练与 TensorRT 部署、KCF 目标跟踪及底盘控制；模型在 Jetson Orin Nano 4GB 上的实机推理帧率由约 9 FPS 提升至约 20 FPS。</p>
+            </article>
+            <article class="copy-block">
+              <h3>项目结果</h3>
+              <p>与队友开发的机械臂模块完成联调，实现“导航—目标跟踪—抓取—导航至终点”的实机演示。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study case-study--portrait" id="quadcopter" aria-labelledby="quadcopter-title">
+      <header class="case-header">
+        <div>
+          <p class="case-kicker">Project 03 · 竞赛项目 · 2023.04—2023.08</p>
+          <h2 id="quadcopter-title">四旋翼无人机自主巡航控制</h2>
+        </div>
+        <p class="case-source">2023 年全国大学生电子设计竞赛<br>江苏省一等奖</p>
+      </header>
+
+      <div class="case-layout case-layout--portrait">
+        <div class="portrait-media-wrap">
+          <div class="media-panel media-panel--portrait">
+            <video controls muted loop preload="none" playsinline data-autoplay-video aria-label="四旋翼无人机自主巡航实机演示视频">
+              <source src="multimedia/quadcopter.mp4" type="video/mp4">
+              当前浏览器不支持视频播放。
+            </video>
+          </div>
+        </div>
+
+        <div class="visual-copy">
+          <figure class="project-image">
+            <img src="multimedia/quadcopter.jpg" alt="四旋翼无人机实物" loading="lazy" decoding="async">
+          </figure>
+          <div class="case-copy">
+            <article class="copy-block">
+              <h3>项目简介</h3>
+              <p>面向空地协同消防比赛任务，实现四旋翼无人机自主巡航和灭火包投放。</p>
+            </article>
+            <article class="copy-block">
+              <h3>工作内容</h3>
+              <p>负责 T265 定位数据传输、任务状态机和位置外环控制；通过 ROS 获取 T265 位姿与速度，经 UART 发送至 STM32F4，并基于开源飞控完成二次开发。</p>
+            </article>
+            <article class="copy-block">
+              <h3>项目结果</h3>
+              <p>无人机按照预设航点全自动完成起飞、巡航、灭火包投放和降落。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>刘庆祥</p>
+    <a href="mailto:3213641837@qq.com">3213641837@qq.com</a>
+  </footer>
+
+  <script>
+    const projectVideos = document.querySelectorAll("[data-autoplay-video]");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!reduceMotion && "IntersectionObserver" in window) {
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
+            entry.target.play().catch(() => {});
+          } else {
+            entry.target.pause();
+          }
+        });
+      }, { threshold: [0, 0.35, 0.75] });
+
+      projectVideos.forEach((video) => videoObserver.observe(video));
+    } else if (!reduceMotion) {
+      projectVideos.forEach((video) => video.play().catch(() => {}));
+    }
+  </script>
+</body>
+</html>
